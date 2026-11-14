@@ -1,0 +1,37 @@
+[
+  {
+    "name": "ECC",
+    "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+    "stars": 302547,
+    "url": "https://github.com/affaan-m/ECC",
+    "fetched_at": "2026-11-14T06:06:28.333Z"
+  },
+  {
+    "name": "react",
+    "description": "The library for web and native user interfaces.",
+    "stars": 252593,
+    "url": "https://github.com/react/react",
+    "fetched_at": "2026-11-14T06:06:28.334Z"
+  },
+  {
+    "name": "javascript-algorithms",
+    "description": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
+    "stars": 196724,
+    "url": "https://github.com/trekhleb/javascript-algorithms",
+    "fetched_at": "2026-11-14T06:06:28.334Z"
+  },
+  {
+    "name": "ponytail",
+    "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
+    "stars": 190457,
+    "url": "https://github.com/DietrichGebert/ponytail",
+    "fetched_at": "2026-11-14T06:06:28.334Z"
+  },
+  {
+    "name": "CS-Notes",
+    "description": ":books: 技术面试必备基础知识、Leetcode、计算机操作系统、计算机网络、系统设计",
+    "stars": 186505,
+    "url": "https://github.com/CyC2018/CS-Notes",
+    "fetched_at": "2026-11-14T06:06:28.334Z"
+  }
+]
