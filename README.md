@@ -25,15 +25,3 @@ serverless-data-pipeline/
 ├── scraper.js                 # Node.js data fetcher & JSON formatter
 ├── data.json                  # Flat-file database (Auto-updated)
 └── index.html                 # Frontend dashboard (Tailwind + Vanilla JS)
-🚀 Live Demo
-You can view the live, auto-updating dashboard here: [https://abirboss8055.github.io/serverless-data-pipeline/]
-
-⚙️ How It Works
-The Cron Job: Every day at midnight (UTC), GitHub Actions spins up an Ubuntu runner.
-
-The Worker: The runner executes scraper.js, which hits the GitHub REST API to find the top 5 trending JavaScript repositories.
-
-The Database: The data is processed and saved into data.json.
-
-The Deployment: The GitHub Action automatically commits the changes to the main branch, which triggers GitHub Pages to serve the updated UI seamlessly.
-```
