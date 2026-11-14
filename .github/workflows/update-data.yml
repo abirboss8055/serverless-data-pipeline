@@ -1,0 +1,36 @@
+name: Scrape Data Daily
+
+on:
+  schedule:
+    # প্রতিদিন নির্দিষ্ট সময়ে নিজে নিজে রান করার জন্য
+    - cron: '0 0 * * *'
+  # নিজে বাটনে ক্লিক করে রান করার জন্য
+  workflow_dispatch: 
+
+jobs:
+  scrape-and-save:
+    runs-on: ubuntu-latest
+    
+    # ফাইল মডিফাই করে সেভ করার পারমিশন
+    permissions:
+      contents: write 
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Scraper Script
+        run: node scraper.js
+
+      - name: Commit and Push data.json
+        run: |
+          git config --local user.email "actions@github.com"
+          git config --local user.name "GitHub Action"
+          git add data.json
+          git commit -m "Auto-update data.json" || echo "No changes to commit"
+          git push
