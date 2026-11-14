@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending JS Repos</title>
+    <!-- Tailwind CSS লোড করা হচ্ছে ডিজাইনের জন্য -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-8 font-sans">
+    <div class="max-w-5xl mx-auto">
+        <h1 class="text-4xl font-bold text-gray-800 mb-2">🚀 Trending JavaScript Repositories</h1>
+        <p class="text-gray-600 mb-8">This data is automatically scraped and updated every day using GitHub Actions.</p>
+        
+        <!-- এই কন্টেইনারের ভেতরে জাভাস্ক্রিপ্ট নিজে নিজে ডেটা বসিয়ে দেবে -->
+        <div id="repo-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        </div>
+    </div>
+
+    <script>
+        async function loadData() {
+            try {
+                // data.json ফাইল থেকে ডেটা টেনে আনা হচ্ছে
+                const response = await fetch('data.json');
+                const repos = await response.json();
+                
+                const container = document.getElementById('repo-container');
+                
+                // প্রত্যেকটা প্রজেক্টের জন্য একটা করে সুন্দর কার্ড বানানো হচ্ছে
+                repos.forEach(repo => {
+                    const card = document.createElement('div');
+                    card.className = "bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-200";
+                    
+                    card.innerHTML = `
+                        <h2 class="text-xl font-bold text-blue-600 mb-2 truncate">
+                            <a href="${repo.url}" target="_blank" class="hover:underline">${repo.name}</a>
+                        </h2>
+                        <p class="text-gray-700 text-sm mb-4 line-clamp-3">${repo.description || 'No description provided.'}</p>
+                        <div class="flex justify-between items-center text-sm text-gray-500">
+                            <span class="flex items-center font-semibold text-yellow-600">
+                                ⭐ ${repo.stars.toLocaleString()}
+                            </span>
+                            <span class="text-xs">Updated: ${new Date(repo.fetched_at).toLocaleDateString()}</span>
+                        </div>
+                    `;
+                    container.appendChild(card);
+                });
+            } catch (error) {
+                console.error("Error loading data:", error);
+                document.getElementById('repo-container').innerHTML = '<p class="text-red-500 font-bold">Failed to load data. Please wait for the next automation run.</p>';
+            }
+        }
+
+        loadData();
+    </script>
+</body>
+</html>
