@@ -25,6 +25,7 @@ serverless-data-pipeline/
 ├── scraper.js                 # Node.js data fetcher & JSON formatter
 ├── data.json                  # Flat-file database (Auto-updated)
 └── index.html                 # Frontend dashboard (Tailwind + Vanilla JS)
+```
 
 ### 🚀 Live Demo
 You can view the live, auto-updating dashboard here: [https://abirboss8055.github.io/serverless-data-pipeline]
