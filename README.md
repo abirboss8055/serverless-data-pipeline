@@ -36,3 +36,4 @@ The Worker: The runner executes scraper.js, which hits the GitHub REST API to fi
 The Database: The data is processed and saved into data.json.
 
 The Deployment: The GitHub Action automatically commits the changes to the main branch, which triggers GitHub Pages to serve the updated UI seamlessly.
+```
