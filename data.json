@@ -2,36 +2,36 @@
   {
     "name": "ECC",
     "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-    "stars": 303168,
+    "stars": 303909,
     "url": "https://github.com/affaan-m/ECC",
-    "fetched_at": "2026-11-15T03:33:49.433Z"
+    "fetched_at": "2026-11-16T03:33:28.753Z"
   },
   {
     "name": "react",
     "description": "The library for web and native user interfaces.",
-    "stars": 252625,
+    "stars": 252653,
     "url": "https://github.com/react/react",
-    "fetched_at": "2026-11-15T03:33:49.433Z"
+    "fetched_at": "2026-11-16T03:33:28.753Z"
   },
   {
     "name": "javascript-algorithms",
     "description": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
-    "stars": 196727,
+    "stars": 196728,
     "url": "https://github.com/trekhleb/javascript-algorithms",
-    "fetched_at": "2026-11-15T03:33:49.433Z"
+    "fetched_at": "2026-11-16T03:33:28.753Z"
   },
   {
     "name": "ponytail",
     "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-    "stars": 190984,
+    "stars": 191527,
     "url": "https://github.com/DietrichGebert/ponytail",
-    "fetched_at": "2026-11-15T03:33:49.433Z"
+    "fetched_at": "2026-11-16T03:33:28.753Z"
   },
   {
     "name": "CS-Notes",
     "description": ":books: 技术面试必备基础知识、Leetcode、计算机操作系统、计算机网络、系统设计",
-    "stars": 186517,
+    "stars": 186519,
     "url": "https://github.com/CyC2018/CS-Notes",
-    "fetched_at": "2026-11-15T03:33:49.433Z"
+    "fetched_at": "2026-11-16T03:33:28.753Z"
   }
 ]
