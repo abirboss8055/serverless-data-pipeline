@@ -2,36 +2,36 @@
   {
     "name": "ECC",
     "description": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
-    "stars": 308432,
+    "stars": 309099,
     "url": "https://github.com/affaan-m/ECC",
-    "fetched_at": "2026-11-22T03:50:10.855Z"
+    "fetched_at": "2026-11-23T04:28:41.219Z"
   },
   {
     "name": "react",
     "description": "The library for web and native user interfaces.",
-    "stars": 252832,
+    "stars": 252941,
     "url": "https://github.com/react/react",
-    "fetched_at": "2026-11-22T03:50:10.855Z"
-  },
-  {
-    "name": "javascript-algorithms",
-    "description": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
-    "stars": 196758,
-    "url": "https://github.com/trekhleb/javascript-algorithms",
-    "fetched_at": "2026-11-22T03:50:10.855Z"
+    "fetched_at": "2026-11-23T04:28:41.219Z"
   },
   {
     "name": "ponytail",
     "description": "Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-    "stars": 196436,
+    "stars": 196996,
     "url": "https://github.com/DietrichGebert/ponytail",
-    "fetched_at": "2026-11-22T03:50:10.855Z"
+    "fetched_at": "2026-11-23T04:28:41.219Z"
+  },
+  {
+    "name": "javascript-algorithms",
+    "description": "📝 Algorithms and data structures implemented in JavaScript with explanations and links to further readings",
+    "stars": 196766,
+    "url": "https://github.com/trekhleb/javascript-algorithms",
+    "fetched_at": "2026-11-23T04:28:41.219Z"
   },
   {
     "name": "CS-Notes",
     "description": ":books: 技术面试必备基础知识、Leetcode、计算机操作系统、计算机网络、系统设计",
-    "stars": 186559,
+    "stars": 186561,
     "url": "https://github.com/CyC2018/CS-Notes",
-    "fetched_at": "2026-11-22T03:50:10.855Z"
+    "fetched_at": "2026-11-23T04:28:41.219Z"
   }
 ]
